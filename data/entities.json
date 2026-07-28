@@ -1,0 +1,62 @@
+{
+  "drugs": [
+    {
+      "name": "Atorvastatin",
+      "claim_count": 2
+    },
+    {
+      "name": "Clozapine",
+      "claim_count": 2
+    },
+    {
+      "name": "Isotretinoin",
+      "claim_count": 2
+    },
+    {
+      "name": "Metformin",
+      "claim_count": 2
+    },
+    {
+      "name": "Warfarin",
+      "claim_count": 4
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Hemorrhagic tendencies",
+      "claim_count": 1
+    },
+    {
+      "name": "INR monitoring",
+      "claim_count": 1
+    },
+    {
+      "name": "Lactic acidosis",
+      "claim_count": 1
+    },
+    {
+      "name": "Major bleeding",
+      "claim_count": 1
+    },
+    {
+      "name": "Pregnancy",
+      "claim_count": 4
+    },
+    {
+      "name": "Renal impairment",
+      "claim_count": 1
+    },
+    {
+      "name": "Rhabdomyolysis",
+      "claim_count": 1
+    },
+    {
+      "name": "Seizure",
+      "claim_count": 1
+    },
+    {
+      "name": "Severe neutropenia",
+      "claim_count": 1
+    }
+  ]
+}

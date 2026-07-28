@@ -1,0 +1,80 @@
+[
+  {
+    "drug": "Warfarin",
+    "condition": "Major bleeding",
+    "claim_ids": [
+      "clm_67ca1ff0a7a4"
+    ]
+  },
+  {
+    "drug": "Warfarin",
+    "condition": "Pregnancy",
+    "claim_ids": [
+      "clm_ed27dd7f1bdb"
+    ]
+  },
+  {
+    "drug": "Warfarin",
+    "condition": "Hemorrhagic tendencies",
+    "claim_ids": [
+      "clm_0736c1fb5362"
+    ]
+  },
+  {
+    "drug": "Warfarin",
+    "condition": "INR monitoring",
+    "claim_ids": [
+      "clm_68e21863025a"
+    ]
+  },
+  {
+    "drug": "Isotretinoin",
+    "condition": "Pregnancy",
+    "claim_ids": [
+      "clm_890351b90721",
+      "clm_82ec252c3d7e"
+    ]
+  },
+  {
+    "drug": "Metformin",
+    "condition": "Lactic acidosis",
+    "claim_ids": [
+      "clm_ec00cabe39f9"
+    ]
+  },
+  {
+    "drug": "Metformin",
+    "condition": "Renal impairment",
+    "claim_ids": [
+      "clm_e97891251bff"
+    ]
+  },
+  {
+    "drug": "Clozapine",
+    "condition": "Severe neutropenia",
+    "claim_ids": [
+      "clm_7956cc2b7972"
+    ]
+  },
+  {
+    "drug": "Clozapine",
+    "condition": "Seizure",
+    "claim_ids": [
+      "clm_6809e589f0d2"
+    ]
+  },
+  {
+    "drug": "Atorvastatin",
+    "condition": "Pregnancy",
+    "claim_ids": [
+      "clm_f9ea49715057"
+    ]
+  },
+  {
+    "drug": "Atorvastatin",
+    "condition": "Rhabdomyolysis",
+    "claim_ids": [
+      "clm_9b8d7fbc5bbb"
+    ]
+  }
+]

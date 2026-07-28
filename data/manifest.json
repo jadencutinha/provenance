@@ -1,0 +1,179 @@
+{
+  "warfarin": {
+    "drug": "warfarin",
+    "note": "Anticoagulant \u2014 BOXED WARNING: fatal bleeding; many interactions",
+    "setid": "541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+    "title": "WARFARIN SODIUM (WARFARIN) TABLET [A-S MEDICATION SOLUTIONS]",
+    "pages": 43,
+    "pdf": "data/raw_pdfs/warfarin.pdf",
+    "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+    "pdf_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+    "openfda": {
+      "generic_name": [
+        "WARFARIN SODIUM"
+      ],
+      "brand_name": [
+        "Warfarin Sodium"
+      ],
+      "product_ndc": [
+        "0093-1712",
+        "0093-1713",
+        "0093-1714",
+        "0093-1715",
+        "0093-1716",
+        "0093-1721",
+        "0093-1718",
+        "0093-1723",
+        "0093-1720"
+      ],
+      "rxcui": [
+        "855288",
+        "855296",
+        "855302",
+        "855312",
+        "855318",
+        "855324",
+        "855332",
+        "855338",
+        "855344"
+      ],
+      "unii": [
+        "6153CWM0CL"
+      ],
+      "route": [
+        "ORAL"
+      ]
+    }
+  },
+  "isotretinoin": {
+    "drug": "isotretinoin",
+    "note": "Acne \u2014 absolute pregnancy contraindication (teratogen); REMS",
+    "setid": "31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+    "title": "ISOTRETINOIN CAPSULE [ZYDUS PHARMACEUTICALS USA INC.]",
+    "pages": 52,
+    "pdf": "data/raw_pdfs/isotretinoin.pdf",
+    "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+    "pdf_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+    "openfda": {
+      "generic_name": [
+        "ISOTRETINOIN"
+      ],
+      "brand_name": [
+        "Isotretinoin"
+      ],
+      "product_ndc": [
+        "68308-781",
+        "68308-782",
+        "68308-783",
+        "68308-784"
+      ],
+      "rxcui": [
+        "197843",
+        "197844",
+        "197845",
+        "403930"
+      ],
+      "unii": [
+        "EH28UP18IF"
+      ],
+      "route": [
+        "ORAL"
+      ]
+    }
+  },
+  "metformin": {
+    "drug": "metformin",
+    "note": "Diabetes \u2014 BOXED WARNING: lactic acidosis; renal contraindication",
+    "setid": "43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+    "title": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE TABLET, FILM COATED, EXTENDED RELEASE [PAR HEALTH USA, LLC]",
+    "pages": 54,
+    "pdf": "data/raw_pdfs/metformin.pdf",
+    "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+    "pdf_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+    "openfda": {
+      "generic_name": [
+        "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE"
+      ],
+      "brand_name": [
+        "ZITUVIMET"
+      ],
+      "product_ndc": [
+        "70771-1859",
+        "70771-1860"
+      ],
+      "rxcui": [
+        "861769",
+        "861819",
+        "2677162",
+        "2677164"
+      ],
+      "unii": [
+        "QFP0P1DV7Z",
+        "786Z46389E"
+      ],
+      "route": [
+        "ORAL"
+      ]
+    }
+  },
+  "clozapine": {
+    "drug": "clozapine",
+    "note": "Antipsychotic \u2014 multiple BOXED WARNINGS (agranulocytosis, seizures)",
+    "setid": "883b5d43-0339-7dc1-f775-93791fb9b978",
+    "title": "CLOZAPINE TABLET [MYLAN PHARMACEUTICALS INC.]",
+    "pages": 54,
+    "pdf": "data/raw_pdfs/clozapine.pdf",
+    "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=883b5d43-0339-7dc1-f775-93791fb9b978",
+    "pdf_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=883b5d43-0339-7dc1-f775-93791fb9b978",
+    "openfda": {
+      "generic_name": [
+        "CLOZAPINE"
+      ],
+      "brand_name": [
+        "Clozapine"
+      ],
+      "product_ndc": [
+        "48433-022"
+      ],
+      "rxcui": [
+        "476177"
+      ],
+      "unii": [
+        "J60AR2IKIC"
+      ],
+      "route": [
+        "ORAL"
+      ]
+    }
+  },
+  "atorvastatin": {
+    "drug": "atorvastatin",
+    "note": "Statin \u2014 pregnancy contraindication; rhabdomyolysis",
+    "setid": "86841382-4229-4e03-958e-3ac22639efd4",
+    "title": "ATORVASTATIN CALCIUM TABLET, FILM COATED [TEVA PHARMACEUTICALS USA, INC.]",
+    "pages": 37,
+    "pdf": "data/raw_pdfs/atorvastatin.pdf",
+    "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86841382-4229-4e03-958e-3ac22639efd4",
+    "pdf_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=86841382-4229-4e03-958e-3ac22639efd4",
+    "openfda": {
+      "generic_name": [
+        "ATORVASTATIN CALCIUM"
+      ],
+      "brand_name": [
+        "Atorvastatin calcium"
+      ],
+      "product_ndc": [
+        "71335-1336"
+      ],
+      "rxcui": [
+        "259255"
+      ],
+      "unii": [
+        "48A5M73Z4Q"
+      ],
+      "route": [
+        "ORAL"
+      ]
+    }
+  }
+}

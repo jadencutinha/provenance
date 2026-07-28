@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / frontend
+node_modules/
+dist/
+.env
+.env.local
+
+# Data — PDFs are large & re-fetchable from DailyMed; keep manifest + reference JSON tracked
+data/raw_pdfs/*.pdf
+data/pages/
+*.log
+
+# OS
+.DS_Store
