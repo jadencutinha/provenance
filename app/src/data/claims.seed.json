@@ -1,0 +1,494 @@
+[
+  {
+    "claim_id": "clm_67ca1ff0a7a4",
+    "claim_text": "Warfarin sodium can cause major or fatal bleeding.",
+    "normalized_statement": "Warfarin can cause major or fatal bleeding.",
+    "claim_type": "warning",
+    "severity": "boxed_warning",
+    "subject_drug": "Warfarin",
+    "object_condition": "Major bleeding",
+    "quantitative_value": null,
+    "source_document_id": "warfarin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.1165,
+          "top": 0.3023,
+          "x1": 0.59542,
+          "bottom": 0.3149
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.1165,
+        "top": 0.3023,
+        "x1": 0.59542,
+        "bottom": 0.3149
+      }
+    },
+    "source": {
+      "drug": "warfarin",
+      "title": "WARFARIN SODIUM (WARFARIN) TABLET [A-S MEDICATION SOLUTIONS]",
+      "setid": "541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "pages": 43
+    }
+  },
+  {
+    "claim_id": "clm_ed27dd7f1bdb",
+    "claim_text": "Pregnancy, except in women with mechanical heart valves.",
+    "normalized_statement": "Warfarin is contraindicated in pregnancy (except mechanical heart valves).",
+    "claim_type": "contraindication",
+    "severity": "contraindication",
+    "subject_drug": "Warfarin",
+    "object_condition": "Pregnancy",
+    "quantitative_value": null,
+    "source_document_id": "warfarin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.09644,
+          "top": 0.75,
+          "x1": 0.56681,
+          "bottom": 0.76259
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.09644,
+        "top": 0.75,
+        "x1": 0.56681,
+        "bottom": 0.76259
+      }
+    },
+    "source": {
+      "drug": "warfarin",
+      "title": "WARFARIN SODIUM (WARFARIN) TABLET [A-S MEDICATION SOLUTIONS]",
+      "setid": "541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "pages": 43
+    }
+  },
+  {
+    "claim_id": "clm_0736c1fb5362",
+    "claim_text": "Hemorrhagic tendencies or blood dyscrasias.",
+    "normalized_statement": "Warfarin is contraindicated in hemorrhagic tendencies or blood dyscrasias.",
+    "claim_type": "contraindication",
+    "severity": "contraindication",
+    "subject_drug": "Warfarin",
+    "object_condition": "Hemorrhagic tendencies",
+    "quantitative_value": null,
+    "source_document_id": "warfarin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.09644,
+          "top": 0.76549,
+          "x1": 0.45771,
+          "bottom": 0.77809
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.09644,
+        "top": 0.76549,
+        "x1": 0.45771,
+        "bottom": 0.77809
+      }
+    },
+    "source": {
+      "drug": "warfarin",
+      "title": "WARFARIN SODIUM (WARFARIN) TABLET [A-S MEDICATION SOLUTIONS]",
+      "setid": "541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "pages": 43
+    }
+  },
+  {
+    "claim_id": "clm_68e21863025a",
+    "claim_text": "Perform regular monitoring of INR in all treated patients.",
+    "normalized_statement": "INR must be monitored regularly in all warfarin patients.",
+    "claim_type": "monitoring",
+    "severity": "serious",
+    "subject_drug": "Warfarin",
+    "object_condition": "INR monitoring",
+    "quantitative_value": null,
+    "source_document_id": "warfarin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.1165,
+          "top": 0.3178,
+          "x1": 0.64809,
+          "bottom": 0.3304
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.1165,
+        "top": 0.3178,
+        "x1": 0.64809,
+        "bottom": 0.3304
+      }
+    },
+    "source": {
+      "drug": "warfarin",
+      "title": "WARFARIN SODIUM (WARFARIN) TABLET [A-S MEDICATION SOLUTIONS]",
+      "setid": "541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=541c9a70-adaf-4ef3-94ba-ad4e70dfa057",
+      "pages": 43
+    }
+  },
+  {
+    "claim_id": "clm_890351b90721",
+    "claim_text": "Isotretinoin can cause life-threatening birth defects and is contraindicated in pregnancy.",
+    "normalized_statement": "Isotretinoin is contraindicated in pregnancy (teratogen).",
+    "claim_type": "contraindication",
+    "severity": "boxed_warning",
+    "subject_drug": "Isotretinoin",
+    "object_condition": "Pregnancy",
+    "quantitative_value": null,
+    "source_document_id": "isotretinoin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.1165,
+          "top": 0.28777,
+          "x1": 0.83278,
+          "bottom": 0.30037
+        },
+        {
+          "x0": 0.1165,
+          "top": 0.3023,
+          "x1": 0.22046,
+          "bottom": 0.3149
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.1165,
+        "top": 0.28777,
+        "x1": 0.83278,
+        "bottom": 0.3149
+      }
+    },
+    "source": {
+      "drug": "isotretinoin",
+      "title": "ISOTRETINOIN CAPSULE [ZYDUS PHARMACEUTICALS USA INC.]",
+      "setid": "31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+      "pages": 52
+    }
+  },
+  {
+    "claim_id": "clm_82ec252c3d7e",
+    "claim_text": "Potentially any fetus exposed during pregnancy can be affected.",
+    "normalized_statement": "Any fetus exposed to isotretinoin during pregnancy can be affected.",
+    "claim_type": "warning",
+    "severity": "serious",
+    "subject_drug": "Isotretinoin",
+    "object_condition": "Pregnancy",
+    "quantitative_value": null,
+    "source_document_id": "isotretinoin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.27199,
+          "top": 0.33138,
+          "x1": 0.87882,
+          "bottom": 0.34398
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.27199,
+        "top": 0.33138,
+        "x1": 0.87882,
+        "bottom": 0.34398
+      }
+    },
+    "source": {
+      "drug": "isotretinoin",
+      "title": "ISOTRETINOIN CAPSULE [ZYDUS PHARMACEUTICALS USA INC.]",
+      "setid": "31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31f62a49-4c6d-4ce3-a0ca-d159562370b1",
+      "pages": 52
+    }
+  },
+  {
+    "claim_id": "clm_ec00cabe39f9",
+    "claim_text": "Postmarketing cases of metformin-associated lactic acidosis have resulted in death",
+    "normalized_statement": "Metformin-associated lactic acidosis can be fatal.",
+    "claim_type": "warning",
+    "severity": "boxed_warning",
+    "subject_drug": "Metformin",
+    "object_condition": "Lactic acidosis",
+    "quantitative_value": null,
+    "source_document_id": "metformin",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.11415,
+          "top": 0.32056,
+          "x1": 0.87645,
+          "bottom": 0.33274
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.11415,
+        "top": 0.32056,
+        "x1": 0.87645,
+        "bottom": 0.33274
+      }
+    },
+    "source": {
+      "drug": "metformin",
+      "title": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE TABLET, FILM COATED, EXTENDED RELEASE [PAR HEALTH USA, LLC]",
+      "setid": "43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+      "pages": 54
+    }
+  },
+  {
+    "claim_id": "clm_e97891251bff",
+    "claim_text": "Severe renal impairment: eGFR below 30 mL/min/1.73 m2.",
+    "normalized_statement": "Metformin is contraindicated in severe renal impairment (eGFR < 30).",
+    "claim_type": "contraindication",
+    "severity": "contraindication",
+    "subject_drug": "Metformin",
+    "object_condition": "Renal impairment",
+    "quantitative_value": "eGFR < 30",
+    "source_document_id": "metformin",
+    "page_number": 2,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "fuzzy",
+      "score": 0.875,
+      "norm_bboxes": [
+        {
+          "x0": 0.09475,
+          "top": 0.23813,
+          "x1": 0.5318,
+          "bottom": 0.25032
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.09475,
+        "top": 0.23813,
+        "x1": 0.5318,
+        "bottom": 0.25032
+      }
+    },
+    "source": {
+      "drug": "metformin",
+      "title": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE TABLET, FILM COATED, EXTENDED RELEASE [PAR HEALTH USA, LLC]",
+      "setid": "43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e3b1c9-3cbd-8dc3-e063-6394a90a10a2",
+      "pages": 54
+    }
+  },
+  {
+    "claim_id": "clm_7956cc2b7972",
+    "claim_text": "Clozapine tablets have caused severe neutropenia",
+    "normalized_statement": "Clozapine can cause severe neutropenia.",
+    "claim_type": "warning",
+    "severity": "boxed_warning",
+    "subject_drug": "Clozapine",
+    "object_condition": "Severe neutropenia",
+    "quantitative_value": null,
+    "source_document_id": "clozapine",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.32467,
+          "top": 0.32362,
+          "x1": 0.80108,
+          "bottom": 0.33622
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.32467,
+        "top": 0.32362,
+        "x1": 0.80108,
+        "bottom": 0.33622
+      }
+    },
+    "source": {
+      "drug": "clozapine",
+      "title": "CLOZAPINE TABLET [MYLAN PHARMACEUTICALS INC.]",
+      "setid": "883b5d43-0339-7dc1-f775-93791fb9b978",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=883b5d43-0339-7dc1-f775-93791fb9b978",
+      "pages": 54
+    }
+  },
+  {
+    "claim_id": "clm_6809e589f0d2",
+    "claim_text": "Use with caution in patients with history of seizure or risk factors for seizure.",
+    "normalized_statement": "Use clozapine with caution in patients at risk of seizure.",
+    "claim_type": "warning",
+    "severity": "serious",
+    "subject_drug": "Clozapine",
+    "object_condition": "Seizure",
+    "quantitative_value": null,
+    "source_document_id": "clozapine",
+    "page_number": 1,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.78992,
+          "top": 0.45444,
+          "x1": 0.86915,
+          "bottom": 0.46703
+        },
+        {
+          "x0": 0.13029,
+          "top": 0.46898,
+          "x1": 0.76346,
+          "bottom": 0.48158
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.13029,
+        "top": 0.45444,
+        "x1": 0.86915,
+        "bottom": 0.48158
+      }
+    },
+    "source": {
+      "drug": "clozapine",
+      "title": "CLOZAPINE TABLET [MYLAN PHARMACEUTICALS INC.]",
+      "setid": "883b5d43-0339-7dc1-f775-93791fb9b978",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=883b5d43-0339-7dc1-f775-93791fb9b978",
+      "pages": 54
+    }
+  },
+  {
+    "claim_id": "clm_f9ea49715057",
+    "claim_text": "Pregnancy: May cause fetal harm.",
+    "normalized_statement": "Atorvastatin may cause fetal harm in pregnancy.",
+    "claim_type": "warning",
+    "severity": "contraindication",
+    "subject_drug": "Atorvastatin",
+    "object_condition": "Pregnancy",
+    "quantitative_value": null,
+    "source_document_id": "atorvastatin",
+    "page_number": 2,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.08786,
+          "top": 0.17722,
+          "x1": 0.31462,
+          "bottom": 0.18766
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.08786,
+        "top": 0.17722,
+        "x1": 0.31462,
+        "bottom": 0.18766
+      }
+    },
+    "source": {
+      "drug": "atorvastatin",
+      "title": "ATORVASTATIN CALCIUM TABLET, FILM COATED [TEVA PHARMACEUTICALS USA, INC.]",
+      "setid": "86841382-4229-4e03-958e-3ac22639efd4",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86841382-4229-4e03-958e-3ac22639efd4",
+      "pages": 37
+    }
+  },
+  {
+    "claim_id": "clm_9b8d7fbc5bbb",
+    "claim_text": "rhabdomyolysis in patients treated with statins, including atorvastatin calcium.",
+    "normalized_statement": "Atorvastatin can cause rhabdomyolysis.",
+    "claim_type": "adverse_reaction",
+    "severity": "serious",
+    "subject_drug": "Atorvastatin",
+    "object_condition": "Rhabdomyolysis",
+    "quantitative_value": null,
+    "source_document_id": "atorvastatin",
+    "page_number": 4,
+    "verifiable": true,
+    "extraction_confidence": 0.9,
+    "review_status": "unreviewed",
+    "anchor": {
+      "method": "exact",
+      "score": 1.0,
+      "norm_bboxes": [
+        {
+          "x0": 0.06291,
+          "top": 0.76992,
+          "x1": 0.69408,
+          "bottom": 0.78278
+        }
+      ],
+      "norm_bbox": {
+        "x0": 0.06291,
+        "top": 0.76992,
+        "x1": 0.69408,
+        "bottom": 0.78278
+      }
+    },
+    "source": {
+      "drug": "atorvastatin",
+      "title": "ATORVASTATIN CALCIUM TABLET, FILM COATED [TEVA PHARMACEUTICALS USA, INC.]",
+      "setid": "86841382-4229-4e03-958e-3ac22639efd4",
+      "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86841382-4229-4e03-958e-3ac22639efd4",
+      "pages": 37
+    }
+  }
+]

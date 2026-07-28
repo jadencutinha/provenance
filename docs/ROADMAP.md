@@ -35,9 +35,12 @@
   port prompt into AIP Logic, wire anchoring as a downstream transform.
 - **P3 — Ontology**: object types (Document, Page, Claim, Drug, Condition) + links; entity
   resolution (RxNorm for drugs, MedDRA/ICD for conditions); "unverifiable" flag logic.
-- **P4 — Reviewer app**: scaffold React on mock Ontology-shaped data → swap to real OSDK;
-  claims table + PDF viewer w/ highlight; Accept/Reject/Flag Action writeback. Decide
-  OSDK-vs-Workshop here based on runway.
+- **P4 — Reviewer app** ✅ *(built on mock data; verified in-browser)*: React app in `app/`
+  — filterable claims table + live PDF viewer (react-pdf) with auto-centering span highlight
+  + provenance breadcrumb + Accept/Reject/Flag writeback (persists to localStorage). Clean
+  build, no console errors. Remaining: swap mock `claims.seed.json` for real **OSDK** once
+  the Ontology exists (P3); decide OSDK-vs-Workshop based on runway. Run: `npm --prefix app
+  run dev`.
 - **P5 — Demo**: end-to-end "drop doc → claim object → click → source page" arc; <4-min video
   covering problem, users, impact, and technical choices.
 

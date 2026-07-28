@@ -13,6 +13,7 @@ dist/
 # Data — PDFs are large & re-fetchable from DailyMed; keep manifest + reference JSON tracked
 data/raw_pdfs/*.pdf
 data/pages/
+data/foundry_upload/
 *.log
 
 # OS
