@@ -162,6 +162,10 @@ export function SourceViewer({ claim, decision, onDecide }: Props) {
               <span className={`badge status-${decision.status}`}>{decision.status}</span>
               by <b>{decision.reviewer}</b> · {new Date(decision.at).toLocaleString()}
             </>
+          ) : status !== "unreviewed" ? (
+            <>
+              <span className={`badge status-${status}`}>{status}</span> · recorded in the Ontology
+            </>
           ) : (
             <span className="muted">unreviewed — record a decision</span>
           )}

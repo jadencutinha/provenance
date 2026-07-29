@@ -33,14 +33,23 @@
 - **P2 — Extract**: claim schema + AIP Logic prompt + output schema **designed** (`docs/
   EXTRACTION.md`); anchoring reference impl done (`scripts/anchor_claims.py`). Remaining:
   port prompt into AIP Logic, wire anchoring as a downstream transform.
-- **P3 — Ontology**: object types (Document, Page, Claim, Drug, Condition) + links; entity
-  resolution (RxNorm for drugs, MedDRA/ICD for conditions); "unverifiable" flag logic.
-- **P4 — Reviewer app** ✅ *(built on mock data; verified in-browser)*: React app in `app/`
-  — filterable claims table + live PDF viewer (react-pdf) with auto-centering span highlight
-  + provenance breadcrumb + Accept/Reject/Flag writeback (persists to localStorage). Clean
-  build, no console errors. Remaining: swap mock `claims.seed.json` for real **OSDK** once
-  the Ontology exists (P3); decide OSDK-vs-Workshop based on runway. Run: `npm --prefix app
-  run dev`.
+- **P3 — Ontology** *(backbone live in jadencutinha Ontology)*: ✅ **Claim** (14 props,
+  `claim_id` PK, `normalized_statement` title, 12 objects indexed) + **Edit Claim** action
+  (writeback); ✅ **Source Document** (6 props, `document_id` PK, 5 objects); ✅ link
+  **Claim→Source Document** (many-to-one FK on `source_document_id`). Remaining/optional:
+  Drug + Condition objects for the matrix (can be app-side aggregation instead); "unverifiable"
+  is already a Claim property. Backing datasets in Provenance project (claims_seed,
+  source_documents, document_pages, page_words). Media set `label_pdfs` holds the 5 PDFs.
+- **P4 — Reviewer app** ✅ *(LIVE on Foundry)*: React app in `app/` — filterable claims table
+  + react-pdf viewer with auto-centering span highlight + provenance breadcrumb +
+  Accept/Reject/Flag. Now reads **live from the Ontology** via the Foundry REST API through a
+  Vite dev proxy (`/foundry`, token injected server-side from `app/.env.local`, never shipped
+  to the browser) — see `app/src/foundry.ts`. Decisions write back through the **edit-claim**
+  Action (`applyEditClaim`). PDFs served locally from `app/public/pdfs`. Run:
+  `npm --prefix app run dev`. Notes: used the Ontology REST API (what OSDK wraps) rather than
+  the generated OSDK package, to avoid private-npm + OAuth-redirect friction; the auto-generated
+  edit-claim action requires resending all props (a dedicated review-only action would be the
+  production refinement).
 - **P5 — Demo**: end-to-end "drop doc → claim object → click → source page" arc; <4-min video
   covering problem, users, impact, and technical choices.
 
