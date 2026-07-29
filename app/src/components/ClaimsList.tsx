@@ -78,13 +78,14 @@ export function ClaimsList({
       </div>
 
       <div className="claim-list">
-        {claims.map((c) => {
+        {claims.map((c, i) => {
           const status = statusOf(c);
           return (
             <button
               key={c.claim_id}
               className={`claim-card ${selectedId === c.claim_id ? "selected" : ""}`}
               onClick={() => onSelect(c.claim_id)}
+              style={{ animationDelay: `${Math.min(i, 14) * 0.03}s` }}
             >
               <span className={`sev-bar sev-${c.severity}`} />
               <div className="claim-body">

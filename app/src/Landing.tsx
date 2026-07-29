@@ -13,7 +13,7 @@ export function Landing({ onEnter }: { onEnter: () => void }) {
 
         <p className="landing-sub">
           A document-to-decision claims engine. It ingests messy source PDFs, extracts structured
-          claims, and links every assertion to the exact page it came from — so a reviewer can
+          claims, and links every assertion to the exact page it came from, so a reviewer can
           trust it in a single click.
         </p>
 

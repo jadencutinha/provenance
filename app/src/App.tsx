@@ -4,6 +4,7 @@ import { SEVERITY_RANK } from "./types";
 import { fetchClaims, applyEditClaim } from "./foundry";
 import { ClaimsList } from "./components/ClaimsList";
 import { SourceViewer } from "./components/SourceViewer";
+import { Matrix } from "./components/Matrix";
 
 const REVIEWER = "j.cutinha";
 
@@ -27,8 +28,9 @@ const EMPTY_FILTERS: Filters = {
   q: "", drug: "", claim_type: "", severity: "", status: "", onlyUnverifiable: false,
 };
 
-export default function App() {
+export default function App({ onHome }: { onHome?: () => void }) {
   const [claims, setClaims] = useState<Claim[]>([]);
+  const [view, setView] = useState<"claims" | "matrix">("claims");
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -92,12 +94,28 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <img className="brand-logo" src="/provenance-logo.png" alt="Provenance" />
+          <img
+            className="brand-logo"
+            src="/provenance-logo.png"
+            alt="Provenance"
+            title="Back to landing"
+            onClick={onHome}
+          />
           <span className="brand-sub">document-to-decision claims engine</span>
           <span className="live-pill" title="Reading live from the Foundry Ontology">
             <span className="live-dot" /> Live · Foundry Ontology
           </span>
         </div>
+
+        <div className="view-tabs">
+          <button className={view === "claims" ? "active" : ""} onClick={() => setView("claims")}>
+            Claims
+          </button>
+          <button className={view === "matrix" ? "active" : ""} onClick={() => setView("matrix")}>
+            Matrix
+          </button>
+        </div>
+
         <div className="stats">
           <Stat label="claims" value={stats.total} />
           <Stat label="verifiable" value={stats.total ? `${Math.round((stats.verifiable / stats.total) * 100)}%` : "—"} tone="ok" />
@@ -117,6 +135,14 @@ export default function App() {
         </div>
       ) : loading ? (
         <div className="fullscreen-msg"><div className="spinner" /><p>Loading claims from the Ontology…</p></div>
+      ) : view === "matrix" ? (
+        <Matrix
+          claims={claims}
+          onPick={(id) => {
+            setSelectedId(id);
+            setView("claims");
+          }}
+        />
       ) : (
         <main className="split">
           <ClaimsList

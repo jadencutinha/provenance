@@ -99,8 +99,11 @@ code { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
 .brand-logo {
   height: 26px;
   width: auto;
+  cursor: pointer;
   filter: drop-shadow(0 0 10px rgba(61, 111, 230, 0.45));
+  transition: filter 0.2s, transform 0.15s;
 }
+.brand-logo:hover { filter: drop-shadow(0 0 16px rgba(61, 111, 230, 0.75)); transform: translateY(-1px); }
 .brand-sub {
   color: var(--muted);
   font-size: 12px;
@@ -167,8 +170,12 @@ code { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
   border-radius: 9px;
   color: var(--muted);
   font-size: 12px;
+  background: rgba(4, 6, 11, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--edge-hi);
+  transition: color 0.15s, border-color 0.15s;
 }
+.toggle:hover { color: var(--ink); }
 .toggle.on { border-color: transparent; color: var(--bad); background:
     linear-gradient(rgba(255, 90, 82, 0.10), rgba(255, 90, 82, 0.10)) padding-box, var(--chrome-soft) border-box; }
 .result-count { margin-top: 11px; font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: 0.07em; }
@@ -446,6 +453,74 @@ code { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
   margin-top: 34px; display: inline-flex; align-items: center; gap: 8px;
   font-size: 12px; color: var(--faint); letter-spacing: 0.02em;
 }
+
+/* ---------- card entrance ---------- */
+@keyframes cardIn { from { opacity: 0; transform: translateY(10px) scale(0.99); } to { opacity: 1; transform: none; } }
+.claim-card { animation: cardIn 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+/* ---------- view tabs ---------- */
+.view-tabs {
+  display: flex; gap: 3px; padding: 3px;
+  border-radius: 11px;
+  background: rgba(4, 6, 11, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--edge-hi);
+}
+.view-tabs button {
+  padding: 6px 18px; border: none; background: transparent;
+  color: var(--muted); font-size: 12.5px; font-weight: 600; border-radius: 8px;
+  transition: color 0.15s, background 0.15s;
+}
+.view-tabs button:hover { color: var(--ink); }
+.view-tabs button.active {
+  color: #fff;
+  background: linear-gradient(180deg, rgba(61, 111, 230, 0.95), rgba(31, 66, 165, 0.95));
+  box-shadow: var(--edge-hi), 0 2px 12px rgba(23, 52, 120, 0.55);
+}
+
+/* ---------- drug × condition matrix ---------- */
+.matrix-wrap {
+  flex: 1; min-height: 0; display: flex; flex-direction: column;
+  padding: 22px 26px;
+  animation: rise 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.matrix-head-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 18px; flex-wrap: wrap; }
+.matrix-title { margin: 0; font-size: 19px; font-weight: 650; letter-spacing: -0.01em; }
+.matrix-sub { margin: 7px 0 0; color: var(--muted); font-size: 13px; max-width: 700px; line-height: 1.55; }
+.matrix-legend { display: flex; gap: 14px; flex-wrap: wrap; padding-top: 4px; }
+.leg { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); text-transform: capitalize; }
+.leg-dot { width: 12px; height: 12px; border-radius: 3px; box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.4); }
+.matrix-scroll {
+  flex: 1; min-height: 0; overflow: auto;
+  border-radius: 16px; padding: 16px;
+  background: linear-gradient(var(--glass), var(--glass)) padding-box, var(--chrome-soft) border-box;
+  border: 1px solid transparent;
+  box-shadow: var(--edge-hi), var(--drop);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+}
+.matrix-grid { display: grid; gap: 7px; min-width: min-content; }
+.mcell { min-height: 46px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.mcell.colhead { align-items: flex-end; justify-content: center; height: 128px; color: var(--muted); }
+.mcell.colhead span { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; padding: 0 0 8px; font-size: 11px; letter-spacing: 0.02em; }
+.mcell.rowhead {
+  justify-content: flex-start; font-weight: 650; color: var(--ink); font-size: 13px;
+  padding-left: 6px; position: sticky; left: 0; z-index: 1;
+  background: linear-gradient(90deg, #080b12 76%, transparent);
+}
+.cell {
+  border-radius: 9px; border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02); color: transparent; font-weight: 800;
+  transition: transform 0.1s, filter 0.15s;
+}
+.cell.filled { color: #06080e; border-color: transparent; cursor: pointer; box-shadow: var(--edge-hi), 0 5px 16px rgba(0, 0, 0, 0.4); }
+.cell.filled:hover { transform: scale(1.07); filter: brightness(1.08); }
+.cell:disabled { cursor: default; }
+.cell.filled.sev-boxed_warning { background: var(--sev-boxed_warning); }
+.cell.filled.sev-contraindication { background: var(--sev-contraindication); }
+.cell.filled.sev-serious { background: var(--sev-serious); }
+.cell.filled.sev-moderate { background: var(--sev-moderate); }
+.cell.filled.sev-info { background: var(--sev-info); }
 
 /* ---------- scrollbars ---------- */
 ::-webkit-scrollbar { width: 11px; height: 11px; }
