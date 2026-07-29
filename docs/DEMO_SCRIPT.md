@@ -1,67 +1,58 @@
-# Provenance — demo script (target 3:45, hard cap 4:00)
+# Provenance — demo script (target 2:35, hard cap 3:00)
 
 Legend: 🖥️ **SCREEN** = what's on screen · 🖱️ **DO** = the click/action · 🎙️ **SAY** = your line.
 
 ## Before you record
-- **Two things open, ready to switch between:**
-  1. The app at **http://localhost:5173/** on the **landing page** (hard-refresh: ⌘⇧R).
-  2. **Foundry** with two tabs handy: **Media Set `label_pdfs`** (the 5 PDFs) and **Ontology Manager → Claim** (showing its properties, the *Claim → Source Document* link, and the *edit-claim* action).
-- **State is clean:** all 12 claims are `unreviewed` (0 decisions). Good — leave it.
+- **One thing open:** the app at **http://localhost:5173/** on the **landing page** (hard-refresh: ⌘⇧R). No Foundry tabs this time — the whole demo lives in the app.
+- **State is clean:** all 12 claims are `unreviewed` (0 decisions). Leave it that way.
 - Practice clicking the **Warfarin "…major or fatal bleeding"** card once so the highlight lands on camera.
-- Record at 1080p+; hide the bookmarks bar; close noisy tabs. Speak a touch slower than feels natural.
-- **Dry-run once with a timer.** This is tight — if you're over 4:00, use the cut list at the bottom.
+- Record at 1080p+; hide the bookmarks bar; close noisy tabs. Talk a touch slower than feels natural — and just talk to one person, not a room.
+- **Do a timed dry-run.** You've got room, but don't dawdle on the landing page.
 
 ---
 
 ## The script
 
-### [0:00–0:35] The problem + who it's for
+### [0:00–0:25] The problem
 🖥️ **SCREEN:** Landing page (the glowing *provenance* logo).
-🎙️ **SAY:** "High-stakes decisions — in drug safety, in regulation, in intelligence — rest on claims buried in thousands of pages of unstructured PDFs. A reviewer reads that a drug can cause fatal bleeding, or that it's contraindicated in pregnancy, and before they can act, they have to answer one question: where exactly did that come from? Today, tracing a single claim to its source can take minutes of hunting. This is Provenance — it makes that one click."
+🎙️ **SAY:** "Okay, so here's the problem I kept running into. A lot of really important decisions — think drug safety, regulation — come down to a claim that's buried somewhere in thousands of pages of PDFs. Someone reads that a drug can cause fatal bleeding, and before they can do anything with that, they have to go figure out: wait, where did that actually come from? And that hunt can eat up minutes, every single time. So I built Provenance to make it one click."
 
-### [0:35–1:15] Show, don't tell — claim → source page
+### [0:25–1:05] The core move — claim → source page
 🖱️ **DO:** Click **Enter workspace**.
-🎙️ **SAY:** "This is the reviewer's workspace, reading live from a corpus of real FDA drug labels. On the left is every claim we pulled out of those documents. Watch what happens when I click one."
+🎙️ **SAY:** "This is the reviewer's workspace. It's reading live from a corpus of real FDA drug labels, and on the left is every claim we pulled out of those documents. Let me just show you the thing instead of describing it — watch when I click one."
 🖱️ **DO:** Click the **Warfarin** card — *"Warfarin sodium can cause major or fatal bleeding."*
-🎙️ **SAY:** (as the PDF loads and the highlight lands) "One click, and I'm on the exact page of the original label, with the exact sentence highlighted. The trail up top traces it: this claim → page one → the warfarin label → straight to the source on DailyMed. No searching. The link from a claim to its source is never broken. That's the whole product."
+🎙️ **SAY:** (as the PDF loads and the highlight lands) "There. One click, and I'm on the exact page of the real label, with the exact sentence highlighted. And you can follow the trail up top — this claim, page one, the warfarin label, all the way back to the source on DailyMed. No searching. That link, from a claim back to where it came from, never breaks. Honestly, that's the whole product right there."
 
-### [1:15–1:45] Why it's trustworthy
-🎙️ **SAY:** "A reviewer can only trust what they can verify. So every claim carries the verbatim source text and its page — never a paraphrase. And if a claim can't be anchored to a real page, it's flagged unverifiable."
+### [1:05–1:30] Why you can trust it
+🎙️ **SAY:** "And a reviewer can only trust what they can actually check. So every claim carries the real source text, word for word, and the page it's on — never a paraphrase, never a summary. And if something can't be pinned to a real page, we don't pretend — it gets flagged as unverifiable."
 🖱️ **DO:** Click the **⚠ unverifiable** toggle (filter bar).
-🎙️ **SAY:** "I can filter for exactly those — anything the system couldn't trace — and here, there are none. Everything is traceable."
+🎙️ **SAY:** "So I can filter for just those — anything the system couldn't trace — and here, there's nothing. It all checks out."
 🖱️ **DO:** Click **⚠ unverifiable** again to clear it.
 
-### [1:45–2:08] Document-to-decision (the writeback)
-🎙️ **SAY:** "And this isn't just a viewer — it's document-to-decision."
+### [1:30–1:55] Document-to-decision (the writeback)
+🎙️ **SAY:** "But this isn't just a nice viewer. The reviewer actually makes the call."
 🖱️ **DO:** Click **✓ Accept** on the current claim. (Watch the **Decisions** counter tick 0 → 1 and the green "Accepted" badge appear.)
-🎙️ **SAY:** "The reviewer makes the call — accept, reject, or flag. That decision is attributed to me, timestamped, and written straight back into the Ontology through a Foundry Action. The judgment becomes tracked data too."
+🎙️ **SAY:** "Accept, reject, or flag — and watch, that decision gets stamped with my name, a timestamp, and written straight back into the ontology. So the reviewer's judgment doesn't just live in someone's head or a spreadsheet — it becomes tracked data, right alongside the claim."
 
-### [2:08–2:32] The matrix — a signal the PDFs hide
+### [1:55–2:20] The matrix — a signal the PDFs hide
 🖱️ **DO:** Click the **Matrix** tab (top center).
-🎙️ **SAY:** "Because every claim is a structured object, I can pivot instantly. This is a drug-by-condition matrix. Look at the pregnancy column — three different drugs, all flagged, colored by severity. That cross-drug signal was invisible across separate PDFs. Here it's obvious in a second."
-🖱️ **DO:** *(optional)* Click the **Isotretinoin × Pregnancy** cell — it jumps back to that claim.
+🎙️ **SAY:** "And here's where it gets interesting. Because every claim is a real structured object now, I can pivot on it. This is a drug-by-condition matrix — look at the pregnancy column. Three different drugs, all flagged, color-coded by severity. That's a pattern you'd never spot flipping through separate PDFs. Here you see it in about a second."
+🖱️ **DO:** *(optional, only if under time)* Click the **Isotretinoin × Pregnancy** cell — it jumps back to that claim.
 
-### [2:32–3:28] Under the hood
-🖱️ **DO:** Switch to **Foundry** → the **Media Set `label_pdfs`** (5 PDFs).
-🎙️ **SAY:** "Under the hood, this is Palantir Foundry and AIP. The raw label PDFs live in a Media Set."
-🖱️ **DO:** Open **AIP Logic → Extract Claims**, then click **Preview run**. (Let the structured array stream into the output panel.)
-🎙️ **SAY:** "This is the extraction, live in AIP Logic. For each page, the model pulls out every atomic claim and copies it verbatim — typed, severity-graded, tagged to a drug and a condition. And here's the decision I'd defend hardest: the model never produces coordinates. A separate, deterministic step finds where that exact text sits on the page."
-🖱️ **DO:** Switch to **Ontology Manager → Claim** — its properties, the **Claim → Source Document** link, and the **edit-claim** action.
-🎙️ **SAY:** "So provenance isn't the model's opinion — it's a function of the source document. Everything resolves into the Ontology: Claims linked to their Source Documents, with an edit-claim Action for writeback. And the app reads live from this Ontology through the Foundry API."
-
-### [3:22–3:52] Impact + close
-🖱️ **DO:** Switch back to the app (the highlighted claim, or the landing page).
-🎙️ **SAY:** "The impact is simple. Tracing a claim to its source drops from minutes of manual hunting to one click — and provenance becomes a property of the data, not a chore. Palantir uses this exact platform to help bring lifesaving drugs to market. Provenance is that idea, built in the open. Thanks for watching."
+### [2:20–2:40] Close
+🖱️ **DO:** Click back to the **Claims** tab (or the highlighted Warfarin claim).
+🎙️ **SAY:** "So that's it. Tracing a claim to its source goes from minutes of digging to one click — and provenance stops being a chore and just becomes a property of the data. It's all running on Palantir Foundry and AIP under the hood — the same platform used to help get lifesaving drugs to market. This is that idea, built in the open. Thanks for watching."
 
 ---
 
-## If you're over 4:00, cut in this order
-1. Drop the optional matrix cell-click (2:32).
-2. Trim the trust section (1:15) to one sentence: "Every claim carries the verbatim text and page, and anything it can't anchor is flagged unverifiable."
-3. Shorten the close to: "Minutes of hunting become one click, and provenance becomes a property of the data. That's Provenance."
+## If you're pushing 3:00, cut in this order
+1. Drop the optional matrix cell-click (1:55).
+2. Trim the trust section to one line: "Every claim carries the real source text and page — and anything it can't anchor gets flagged unverifiable. I can filter for those, and here there are none."
+3. Shorten the close to: "Minutes of digging become one click, and provenance becomes a property of the data — all on Foundry and AIP. That's Provenance. Thanks for watching."
 
 ## Honesty notes (so you can field FDE questions)
-- **Live on camera:** the **AIP Logic Extract Claims** function (you run it — verbatim, typed, severity-graded array output), the Media Set, the Ontology (Claim, Source Document, the link, the edit-claim action), the app reading live via the Foundry API, and the Accept/Reject/Flag **writeback** (verified round-trip).
-- **Deterministic anchoring** (claim text → exact page coordinates) runs in `scripts/anchor_claims.py` (proof image `docs/assets/warfarin_boxed_warning.png`). It's the one piece not yet wired as an in-Foundry Pipeline transform — if asked, that's the honest next step; the logic is done and validated (12/12 seed claims anchored, fabricated claim flagged unverifiable).
-- If asked "why not the generated OSDK package?": you chose the **Foundry Ontology REST API** (what OSDK wraps) via a token-injecting dev proxy — same live-Ontology result, without private-npm + OAuth-redirect friction for a demo.
-- **Timing:** with the live AIP Logic run this lands near 4:00. Do a timed dry-run; if over, drop the optional matrix cell-click and trim the trust section (cut list above).
+- **Live on camera (this cut):** the app reading live from the Ontology via the Foundry API, the claim → source-page highlight, the unverifiable filter, and the Accept/Reject/Flag **writeback** (verified round-trip into the Ontology through a Foundry Action).
+- **Not shown on camera anymore (but real, mention if asked):** the raw label PDFs live in a Foundry **Media Set**; extraction runs in **AIP Logic** (per page, the model pulls every atomic claim verbatim — typed, severity-graded, tagged to a drug and condition); everything resolves into the **Ontology** (Claim linked to Source Document, with an edit-claim Action for writeback).
+- **The claim I'd defend hardest:** the model never produces coordinates. A separate, deterministic step (`scripts/anchor_claims.py`, proof image `docs/assets/warfarin_boxed_warning.png`) finds where the exact text sits on the page — so provenance is a function of the source document, not the model's opinion. 12/12 seed claims anchored; a fabricated claim correctly flagged unverifiable.
+- **Anchoring** is the one piece not yet wired as an in-Foundry Pipeline transform — honest next step; logic is done and validated.
+- If asked "why not the generated OSDK package?": chose the **Foundry Ontology REST API** (what OSDK wraps) via a token-injecting dev proxy — same live-Ontology result, without private-npm + OAuth-redirect friction for a demo.
